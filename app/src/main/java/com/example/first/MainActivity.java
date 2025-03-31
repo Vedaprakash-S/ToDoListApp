@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
         taskList = loadTasks();
         taskStatus = loadTaskStatus();
 
-        // Add task when button is clicked
+ 
         addTaskBtn.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TaskActivity.class);
             startActivity(intent);
 
         });
 
-        // Open View Tasks Page
+     
         viewListBtn.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TaskListActivity.class);
             intent.putStringArrayListExtra("taskList", taskList);
